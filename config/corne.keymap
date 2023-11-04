@@ -85,8 +85,8 @@
 //       | LATL/=|  0  |  1  |  2  |  3  |  .  |   | VOLD| END | DOWN| PGDN| PAUS|     |
 //                          |     |     | ADJ |   | ADJ |     |     |
                         bindings = <
-          &kp KP_NUM            &kp KP_MULTIPLY &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS               &kp C_VOL_UP &kp HOME &kp UP    &kp PG_UP &none &kp RGUI
-          &mt LCTRL             &kp KP_SLASH    &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MINUS              &kp C_MUTE   &kp LEFT &kp DOWN  &kp RIGHT &none &kp RCTRL
+          &kp KP_NUM            &kp KP_MULTIPLY &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS               &kp C_VOL_UP &kp HOME &kp UP            &kp PG_UP &none &kp RGUI
+          &mt LCTRL             &kp KP_SLASH    &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MINUS              &kp C_MUTE   &kp LEFT &kp DOWN          &kp RIGHT &none &kp RCTRL
           &mt LEFT_ALT EQUAL    &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT                &kp C_VOL_DN &kp END  &kp C_PLAY_PAUSE  &kp PG_DN &none &kp RALT
                                                            &trans &trans &lt ADJ RET   &lt ADJ ESC &trans &trans
                         >;
@@ -99,17 +99,15 @@
 //       |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                          |     |     |     |   |     |     |     |
                         bindings = <
-          &sys_reset &none &kp F1 &kp F2  &kp F3  &kp F4                       &none &none &none &none &none &none
-          &none      &none &kp F5 &kp F6  &kp F7  &kp F8                       &none &none &none &none &none &none
-          &none      &none &kp F9 &kp F10 &kp F11 &kp F12                      &bt BT_SEL 4     &bt BT_SEL 3      &bt BT_SEL 2      &bt BT_SEL 1     &bt BT_SEL 0     &bt BT_CLR  
+          &reset        &none &kp F1 &kp F2  &kp F3  &kp F4                       &rgb_ug  RGB_TOG &rgb_ug  RGB_HUI  &rgb_ug  RGB_SAI  &rgb_ug  RGB_BRI &rgb_ug  RGB_SPI &rgb_ug  RGB_EFF
+          &bootloader   &none &kp F5 &kp F6  &kp F7  &kp F8                       &none            &rgb_ug  RGB_HUD  &rgb_ug  RGB_SAD  &rgb_ug  RGB_BRD &rgb_ug  RGB_SPD &none
+          &none         &none &kp F9 &kp F10 &kp F11 &kp F12                      &bt BT_SEL 4     &bt BT_SEL 3      &bt BT_SEL 2      &bt BT_SEL 1     &bt BT_SEL 0     &bt BT_CLR  
                                         &trans &none &trans   &trans &none &trans
                         >;
                 };
         };
 };
 
-// &rgb_ug  RGB_TOG &rgb_ug  RGB_HUI  &rgb_ug  RGB_SAI  &rgb_ug  RGB_BRI &rgb_ug  RGB_SPI &rgb_ug  RGB_EFF
-//  &none            &rgb_ug  RGB_HUD  &rgb_ug  RGB_SAD  &rgb_ug  RGB_BRD &rgb_ug  RGB_SPD &none
 
 
 
