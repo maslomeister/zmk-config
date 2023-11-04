@@ -53,10 +53,10 @@
 //       |  =  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |     |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-          &kp LGUI       &trans   &trans &trans   &trans   &kp F5           &kp EXCL  &kp AT   &kp HASH &kp DOLLAR  &kp PERCENT  &kp RGUI
-          &kp LCTRL      &trans   &trans &trans   &kp F2   &trans           &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &mt RCTRL MINUS
-          &mt LALT EQUAL &trans   &trans &trans   &trans   &LNG_SW          &trans    &trans   &trans   &trans   &trans   &kp RALT
-                                              &lt ADJ TAB &trans &trans   &trans &trans &lt ADJ DEL
+          &kp LGUI       &none   &none &none  &none   &kp F5                   &kp EXCL  &kp AT   &kp HASH &kp DOLLAR  &kp PERCENT  &kp RGUI
+          &kp LCTRL      &none   &none &none  &kp F2  &none                    &kp CARET &kp AMPS &kp STAR &kp LPAR    &kp RPAR     &mt RCTRL MINUS
+          &mt LALT EQUAL &none   &none &none  &none   &LNG_SW                  &none     &none    &none    &none       &none        &kp RALT
+                                              &lt ADJ TAB &trans &trans        &trans &trans &lt ADJ DEL
                         >;
                 };
 
@@ -87,6 +87,11 @@
                         >;
                 };
         };
+};
+
+
+&led_strip {
+    chain-length = <30>;
 };
 
 
