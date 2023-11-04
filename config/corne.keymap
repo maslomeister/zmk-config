@@ -27,10 +27,26 @@
                 ;
         };
     };
+
+    behavior {
+        sm: space_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_MOD";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
+    }
 };
 
 &mt {
     tapping-term-ms = <100>;
+};
+
+&led_strip {
+    chain-length = <30>;
 };
 
 
@@ -48,7 +64,7 @@
             &mt LWIN RBKT   &kp Q &kp W &kp E &kp R &kp T               &kp Y  &kp U  &kp I     &kp O   &kp P     &mt RWIN LBKT
             &mt LCTRL GRAVE &kp A &kp S &kp D &kp F &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI  &mt RCTRL SQT
             &mt LALT MINUS  &kp Z &kp X &kp C &kp V &kp B               &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH  &mt RALT BSLH
-                  &lt RSE TAB &mt LSHFT SPACE &lt LWR RET               &lt LWR ESC &kp BSPC &lt RSE DEL
+                  &lt RSE TAB &sm LSHFT SPACE &lt LWR RET               &lt LWR ESC &kp BSPC &lt RSE DEL
                         >;
                 };
           
@@ -97,9 +113,7 @@
 };
 
 
-&led_strip {
-    chain-length = <30>;
-};
+
 
 
 
