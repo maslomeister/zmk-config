@@ -28,7 +28,7 @@
         };
     };
 
-    behavior {
+    behaviors {
         sm: space_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_MOD";
@@ -38,7 +38,7 @@
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
-    }
+    };
 };
 
 &led_strip {
