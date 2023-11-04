@@ -41,10 +41,6 @@
     }
 };
 
-&mt {
-    tapping-term-ms = <100>;
-};
-
 &led_strip {
     chain-length = <30>;
 };
